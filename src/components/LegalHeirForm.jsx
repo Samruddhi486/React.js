@@ -120,6 +120,7 @@ const LegalHeirForm = ({ index, data, onChange }) => {
           />
         </div>
 
+
         <div className="form-group">
           <label>Mobile Number *</label>
           <input
@@ -159,11 +160,11 @@ const LegalHeirForm = ({ index, data, onChange }) => {
         </div>
 
         <div className="form-group">
-          <label>Account Holder Name *</label>
+          <label>Bank Name *</label>
           <input
             type="text"
-            name="accountName"
-            value={data.accountName || ''}
+            name="bankname"
+            value={data.bankName || ''}
             onChange={handleChange}
             required
           />
@@ -229,3 +230,5 @@ const LegalHeirForm = ({ index, data, onChange }) => {
 };
 
 export default LegalHeirForm;
+
+

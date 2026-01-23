@@ -11,7 +11,8 @@ function App() {
   const [formData, setFormData] = useState({
     legalHeirs: [{}, {}, {}], // Three legal heirs
     shareholders: [{ sno: 1, name: '', dateOfDemise: '' }],
-    otherInfo: { formDate: '', folioNumber: '', faceValue: '' },
+    // otherInfo: { formDate: '', folioNumber: '', faceValue: '' },
+    otherInfo: { formDate: '', folioNumber: '', faceValue: '', bankName: '' },
     companyInfo: { name: '', address: '' },
     rtaInfo: { name: '', address: '' },
     securities: [
@@ -31,6 +32,8 @@ function App() {
       dematStatement: false
     }
   });
+
+
 
   const handleLegalHeirChange = (index, field, value) => {
     const updatedHeirs = [...formData.legalHeirs];
